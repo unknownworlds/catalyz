@@ -1,6 +1,6 @@
 var url = require('url');
 
-var misc  = require('./misc'),
+var common  = require('./common'),
 	clean = require('./clean');
 
 var Player = require('../models/Player'),
@@ -17,7 +17,7 @@ exports.register = function() {
 		region = query.region,
 		nickname = query.nickname;
 
-	if (!misc.checkParameter.call(this, [server, steamID, build, region, nickname])) return;
+	if (!common.checkParameter.call(this, [server, steamID, build, region, nickname])) return;
 
 	Player.findOne({'steamID' : steamID}, function(err, player) {
 		if (player == null) {
@@ -51,7 +51,7 @@ exports.deregister = function() {
 		steamID = query.steamID,
 		reason  = query.reason;
 
-	if(!misc.checkParameter.call(this, [steamID])) return;
+	if(!common.checkParameter.call(this, [steamID])) return;
 
 	Player.findOne({'steamID' : steamID}, function(err, player) {
 		clean.removePlayer(player, function() {
@@ -68,11 +68,11 @@ exports.update = function() {
 	var query   = url.parse(request.url, true).query,
 		steamID = query.steamID;
 
-	if(!misc.checkParameter.call(this, [steamID])) return;
+	if(!common.checkParameter.call(this, [steamID])) return;
 
 	Player.findOne({ steamID: steamID}, function(err, player) {
 		if (player == null) {
-			misc.respondError().call(me);
+			common.respondError().call(me);
 			return;
 		}
 		player.save();
@@ -82,7 +82,7 @@ exports.update = function() {
 				group: group
 			};
 
-			misc.respondJSON.call(me, toSend);
+			common.respondJSON.call(me, toSend);
 		});
 	})
 };
