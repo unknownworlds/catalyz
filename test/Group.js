@@ -63,6 +63,62 @@ describe('Group', function() {
 		});
 	});
 
+	it('different region give different group', function(done) {
+		function Run(i, players, callback) {
+			if ( i < players.length) {
+				Group.GetPlayerGroup(players[i], function() {
+					i += 1;
+					Run(i, players, callback);
+				});
+			} else {
+				callback();
+			}
+		}
+
+		var p = [];
+
+		for(var i = 0; i < 3; i++) {
+			p.push(models.createPlayer(String(i), "John" + i));
+		}
+		p[0].region = "US";
+		p[1].region = "EU";
+		p[2].region = "US";
+
+		Run(0, p, function() {
+			p[0].groupID.equals(p[2].groupID).should.be.true;
+			p[0].groupID.equals(p[1].groupID).should.be.false;
+			done();
+		});
+	});
+
+	it('different build give different group', function(done) {
+		function Run(i, players, callback) {
+			if ( i < players.length) {
+				Group.GetPlayerGroup(players[i], function() {
+					i += 1;
+					Run(i, players, callback);
+				});
+			} else {
+				callback();
+			}
+		}
+
+		var p = [];
+
+		for(var i = 0; i < 3; i++) {
+			p.push(models.createPlayer(String(i), "John" + i));
+		}
+		p[0].build = "200";
+		p[1].build = "201";
+		p[2].build = "200";
+
+		Run(0, p, function() {
+			p[0].groupID.equals(p[2].groupID).should.be.true;
+			p[0].groupID.equals(p[1].groupID).should.be.false;
+			done();
+		});
+	});
+
 	it('start after group:min players', function(done) {
 		var min = conf.get('group:min'),
 			g   = models.createGroup(),
@@ -86,7 +142,6 @@ describe('Group', function() {
 	it('can\'t have more than group:max players in a group', function(done) {
 		var max = conf.get('group:max'),
 			n   = max + 1,
-			g   = models.createGroup(),
 			p   = [];
 
 		function Run(i, players, callback) {
