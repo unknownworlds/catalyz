@@ -11,7 +11,7 @@ var cleanPlayer = function(idle, callback) {
 				i += 1;
 				removeAll(i, players);
 			});
-		} else {
+		} else if (callback) {
 			callback();
 		}		
 	};
@@ -29,7 +29,7 @@ var cleanGroup = function(callback) {
 				i += 1;
 				removeAll(i, groups);
 			});
-		} else {
+		} else if (callback) {
 			callback();
 		}	
 	};

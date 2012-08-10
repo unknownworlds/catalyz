@@ -3,6 +3,8 @@ var mongoose = require('mongoose'),
 
 var _ = require('underscore');
 
+var conf = require('../../config/config');
+
 var GroupSchema = new Schema({
 	players: [],
 	playerCount: Number,
@@ -41,7 +43,7 @@ GroupSchema.methods.addPlayer = function(player) {
 		nickname: player.nickname
 	});
 
-	if (this.players.length >= 8) {
+	if (this.players.length >= conf.get('group:min')) {
 		this.hasStarted = true;
 	}
 
@@ -67,7 +69,7 @@ GroupSchema.statics.GetPlayerGroup = function(player, callback) {
 			callback(group);
 		});
 	} else {
-		Group.findOne({ build: player.build, region: player.region}).lte('playerCount', 8).gte('playerCount', 1).exec(function(err, group) {
+		Group.findOne({ build: player.build, region: player.region}).lt('playerCount', conf.get('group:max')).gte('playerCount', 1).exec(function(err, group) {
 			if (!group) {
 				group = new Group({
 					build: player.build,

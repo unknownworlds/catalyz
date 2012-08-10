@@ -1,16 +1,21 @@
 var http      = require('http'),
 	mongoose  = require('mongoose');
-	daemon    = require('./app/daemon');
+	worker    = require('./app/worker');
 
-var app = require('./app/server');
+var app  = require('./app/server'),
+	conf = require('./config/config');
 
 // Init
-mongoose.connect('mongodb://localhost/catalyz_local');
-
-console.log('Catalyz starts');
+var uri = conf.get('database:uri');
+mongoose.connect(uri);
+console.log('database connection to ' + uri + '.');
 
 // Start daemon
-daemon.cleaner();
+var period = conf.get('worker:period');
+worker.cleaner(period);
+console.log('worker will run every ' + period + ' seconds.')
 
 // Start
-app.listen(3000);
+var port = conf.get('PORT');
+app.listen(conf.get('PORT'));
+console.log('Catalyz starts on port ' + port + '.');

@@ -1,6 +1,8 @@
 var db     = require('./fixtures/database'),
 	models = require('./fixtures/models');
 
+var conf = require('../config/config');
+
 var Group  = require('../app/models/Group'),
 	Player = require('../app/models/Player');
 
@@ -61,34 +63,51 @@ describe('Group', function() {
 		});
 	});
 
-	it('start after 8 players', function(done) {
-		var p1 = models.createPlayer("1", "John"),
-			p2 = models.createPlayer("2", "Jane"),
-			p3 = models.createPlayer("3", "Simon"),
-			p4 = models.createPlayer("4", "Jin"),
-			p5 = models.createPlayer("5", "Sol"),
-			p6 = models.createPlayer("6", "Kevin"),
-			p7 = models.createPlayer("7", "Harry"),
-			p8 = models.createPlayer("8", "Sonia");
-		
-		var g = models.createGroup();
+	it('start after group:min players', function(done) {
+		var min = conf.get('group:min'),
+			g   = models.createGroup(),
+			p   = [];
 
-		g.addPlayer(p1);
-		g.addPlayer(p2);
-		g.addPlayer(p3);
-		g.addPlayer(p4);
-		g.addPlayer(p5);
-		g.addPlayer(p6);
-		g.addPlayer(p7);
-		g.addPlayer(p8);
+		for(var i = 0; i < min; i++) {
+			p.push(models.createPlayer(String(i), "John" + i));
+			g.addPlayer(p[i]);
+		}
 
 		g.save(function(err) {
 			Group.findOne({}, function(err, group) {
-				group.players.length.should.equal(8);
-				group.playerCount.should.equal(8);
+				group.players.length.should.equal(min);
+				group.playerCount.should.equal(min);
 				group.hasStarted.should.be.true;
 				done();
 			});
+		});
+	});
+
+	it('can\'t have more than group:max players in a group', function(done) {
+		var max = conf.get('group:max'),
+			n   = max + 1,
+			g   = models.createGroup(),
+			p   = [];
+
+		function Run(i, players, callback) {
+			if ( i < players.length) {
+				Group.GetPlayerGroup(players[i], function() {
+					i += 1;
+					Run(i, players, callback);
+				});
+			} else {
+				callback();
+			}
+		}
+
+		for(var i = 0; i < n; i++) {
+			p.push(models.createPlayer(String(i), "John" + i));
+		}
+
+		Run(0, p, function() {
+			p[0].groupID.equals(p[max-1].groupID).should.be.true;
+			p[max-1].groupID.equals(p[n-1].groupID).should.be.false;
+			done();
 		});
 	});
 

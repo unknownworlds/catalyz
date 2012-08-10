@@ -3,10 +3,10 @@
     "version": "0.0.1",
     "description": "Make people play to Natural Selection 2 together",
     "dependencies": {
-        "express": "3.x",
         "director": "1.x.x",
         "mongoose": "2.7.x",
         "underscore": "1.x.x",
-        "supertest": "0.1.x"
+        "supertest": "0.1.x",
+        "nconf":  "0.6.x"
     }
 }
