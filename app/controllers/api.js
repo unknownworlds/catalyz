@@ -1,0 +1,88 @@
+var url = require('url');
+
+var misc  = require('./misc'),
+	clean = require('./clean');
+
+var Player = require('../models/Player'),
+	Group  = require('../models/Group');
+
+exports.register = function() {
+	var request = this.req,
+		response = this.res;
+
+	var query = url.parse(request.url, true).query,
+		server = query.server,
+		steamID = query.steamID,
+		build = query.build,
+		region = query.region,
+		nickname = query.nickname;
+
+	if (!misc.checkParameter.call(this, [server, steamID, build, region, nickname])) return;
+
+	Player.findOne({'steamID' : steamID}, function(err, player) {
+		if (player == null) {
+			var player = new Player({
+				steamID: steamID,
+				nickname: nickname,
+				build: build,
+				region: region,
+			});
+			player.save();
+		}
+
+		Group.GetPlayerGroup(player, function(group) {
+			var toSend = {
+				player: player,
+				group: group
+			};
+
+			response.writeHead(200, {"Content-Type": "application/json"});
+			response.write(JSON.stringify(toSend));
+			response.end();
+		});
+	});
+};
+
+exports.deregister = function() {
+	var request  = this.req,
+		response = this.res;
+
+	var query   = url.parse(request.url, true).query,
+		steamID = query.steamID,
+		reason  = query.reason;
+
+	if(!misc.checkParameter.call(this, [steamID])) return;
+
+	Player.findOne({'steamID' : steamID}, function(err, player) {
+		clean.removePlayer(player, function() {
+			response.end();
+		});
+	});
+};
+
+exports.update = function() {
+	var request  = this.req,
+		response = this.res,
+		me       = this;
+
+	var query   = url.parse(request.url, true).query,
+		steamID = query.steamID;
+
+	if(!misc.checkParameter.call(this, [steamID])) return;
+
+	Player.findOne({ steamID: steamID}, function(err, player) {
+		if (player == null) {
+			misc.respondError().call(me);
+			return;
+		}
+		player.save();
+
+		Group.GetPlayerGroup(player, function(group) {
+			var toSend = {
+				group: group
+			};
+
+			misc.respondJSON.call(me, toSend);
+		});
+	})
+};
