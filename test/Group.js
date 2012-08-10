@@ -119,6 +119,27 @@ describe('Group', function() {
 		});
 	});
 
+	/** For now a group can be join even if it has started
+	it('can\'t get a group which has already started', function(done) {
+		var p1 = models.createPlayer("1", "John"),
+			p2 = models.createPlayer("2", "Jane"),
+			p3 = models.createPlayer("3", "Simon");
+
+		Group.GetPlayerGroup(p1, function(g1) {
+			Group.GetPlayerGroup(p2, function(g2) {
+				g2.hasStarted = true;
+				g2.save(function() {
+					Group.GetPlayerGroup(p3, function(g3) {
+						g1._id.equals(g2._id).should.be.true;
+						g1._id.equals(g3._id).should.be.false;
+						done();
+					});
+				});
+			});
+		});
+	});
+	*/
+
 	it('start after group:min players', function(done) {
 		var min = conf.get('group:min'),
 			g   = models.createGroup(),

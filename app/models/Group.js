@@ -16,6 +16,8 @@ var GroupSchema = new Schema({
 	updateDate: Date
 });
 
+GroupSchema.index({playerCount: 1, region: 1, build: 1, hasStarted: 1});
+
 GroupSchema.pre('save', function(next) {
 	this.players = this.players ? this.players : [];
 	this.createDate = this.createDate ? this.createDate : new Date();
