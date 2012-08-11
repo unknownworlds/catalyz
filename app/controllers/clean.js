@@ -13,7 +13,7 @@ var cleanPlayer = function(idle, callback) {
 			});
 		} else if (callback) {
 			callback();
-		}		
+		}
 	};
 
 	Player.find({updateDate : { $lt : limitDate }}, function(err, players) {

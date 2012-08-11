@@ -37,6 +37,7 @@ exports.register = function() {
 				group: group
 			};
 
+			console.log('REGISTER: ' + steamID);
 			response.writeHead(200, {"Content-Type": "application/json"});
 			response.write(JSON.stringify(toSend));
 			response.end();
@@ -57,6 +58,7 @@ exports.deregister = function() {
 	Player.findOne({'steamID' : steamID}, function(err, player) {
 		if (player) {
 			clean.removePlayer(player, function() {
+				console.log('DEREGISTER: ' + steamID);
 				response.end();
 			});
 		} else {

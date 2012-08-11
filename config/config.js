@@ -12,7 +12,7 @@ nconf.env('__').overrides({
 		period: 5
 	},
 	player: {
-		timeout: 60
+		timeout: 30
 	},
 	group: {
 		min: 8, // minimum number of player to start
