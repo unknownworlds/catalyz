@@ -24,6 +24,7 @@ exports.register = function() {
 			var player = new Player({
 				steamID: steamID,
 				nickname: nickname,
+				server: server,
 				build: build,
 				region: region,
 			});

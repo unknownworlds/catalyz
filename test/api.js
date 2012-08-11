@@ -30,7 +30,9 @@ describe('API v1', function() {
 					var body = response.body;
 					body.should.have.property('group');
 					body.group.should.have.property('players');
+					body.group.should.have.property('server');
 					body.should.have.property('player');
+					body.player.should.have.property('server');
 					body.player.should.include({ steamID: "12345", nickname: "John"});
 					body.player.should.have.property('groupID');
 					done();
@@ -45,14 +47,15 @@ describe('API v1', function() {
 		});
 
 		it('update show new person', function(done) {
-			request(app).get('/v1/register?region=Europe&steamID=12345&nickname=John&build=200&server=120.0.0.1:27015')
+			request(app).get('/v1/register?region=Europe&steamID=12345&nickname=John&build=200&server=127.0.0.1:27015')
 				.end(function(err, response) {
-					request(app).get('/v1/register?region=Europe&steamID=98765&nickname=Jane&build=200&server=120.0.0.1:27015')
+					request(app).get('/v1/register?region=Europe&steamID=98765&nickname=Jane&build=200&server=127.0.0.1:27015')
 						.end(function(err, response) {
 							request(app).get('/v1/update?steamID=98765')
 								.end(function(err, response) {
 									response.body.group.players.length.should.equal(2);
 									response.body.group.playerCount.should.equal(2);
+									response.body.group.server.should.equal("127.0.0.1:27015");
 									done();
 								});
 						});
@@ -78,7 +81,7 @@ describe('API v1', function() {
 													body.regions.US_West.should.equal(1);
 													body.regions.Europe.should.equal(2);
 													body.regions.Asia.should.equal(1);
-													body.regions.US_Africa.should.equal(0);
+													body.regions.Africa.should.equal(0);
 													done();
 												});
 										});
