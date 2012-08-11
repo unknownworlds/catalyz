@@ -11,10 +11,24 @@ nconf.env('__').overrides({
 	worker: {
 		period: 5
 	},
+	player: {
+		timeout: 60
+	},
 	group: {
 		min: 8, // minimum number of player to start
 		max: 12 // maximum number of player to start
 	},
+	regions: [
+		'US_East',
+		'US_West',
+		'South_America',
+		'Europe',
+		'Asia',
+		'Australia',
+		'Middle_East',
+		'Africa',
+		'Other'
+	],
 	PORT: 80
 });
 

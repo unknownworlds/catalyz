@@ -60,6 +60,34 @@ describe('API v1', function() {
 		});
 	});
 
+	describe('/status', function() {
+		it('count are ok', function(done) {
+			request(app).get('/v1/register?region=Europe&steamID=1&nickname=John&build=200&server=120.0.0.1:27015')
+				.end(function(err, response) {
+					request(app).get('/v1/register?region=Asia&steamID=2&nickname=Jane&build=200&server=120.0.0.1:27015')
+						.end(function(err, response) {
+							request(app).get('/v1/register?region=US_West&steamID=3&nickname=Jane&build=200&server=120.0.0.1:27015')
+								.end(function(err, response) {
+									request(app).get('/v1/register?region=Europe&steamID=4&nickname=Jane&build=200&server=120.0.0.1:27015')
+										.end(function(err, response) {
+											request(app).get('/v1/status')
+												.end(function(err, response) {
+													var body = response.body;
+													body.playerCount.should.equal(4);
+													body.groupCount.should.equal(3);
+													body.regions.US_West.should.equal(1);
+													body.regions.Europe.should.equal(2);
+													body.regions.Asia.should.equal(1);
+													body.regions.US_Africa.should.equal(0);
+													done();
+												});
+										});
+								});
+						});
+				});
+		});
+	});
+
 	describe('/deregister', function() {
 		it('fail if no steamID', function(done) {
 			request(app).get('/v1/deregister')

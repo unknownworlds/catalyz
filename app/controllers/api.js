@@ -54,9 +54,13 @@ exports.deregister = function() {
 	if(!common.checkParameter.call(this, [steamID])) return;
 
 	Player.findOne({'steamID' : steamID}, function(err, player) {
-		clean.removePlayer(player, function() {
+		if (player) {
+			clean.removePlayer(player, function() {
+				response.end();
+			});
+		} else {
 			response.end();
-		});
+		}
 	});
 };
 

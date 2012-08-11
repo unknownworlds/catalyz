@@ -1,7 +1,8 @@
 var director = require('director');
 
-var api = require('./controllers/api');
-	debug = require('./controllers/debug');
+var api   = require('./controllers/api'),
+	debug = require('./controllers/debug'),
+	infos = require('./controllers/infos');
 
 var routes = {
 	'/v1': {
@@ -14,8 +15,11 @@ var routes = {
 		'/update': {
 			get: api.update
 		},
-		'/infos': {
+		'/debug': {
 			get: debug.infos
+		},
+		'/status': {
+			get: infos.count
 		}
 	}
 };
