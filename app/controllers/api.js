@@ -47,7 +47,8 @@ exports.register = function() {
 
 exports.deregister = function() {
 	var request  = this.req,
-		response = this.res;
+		response = this.res,
+		me       = this;
 
 	var query   = url.parse(request.url, true).query,
 		steamID = query.steamID,
@@ -56,13 +57,13 @@ exports.deregister = function() {
 	if(!common.checkParameter.call(this, [steamID])) return;
 
 	Player.findOne({'steamID' : steamID}, function(err, player) {
-		if (player) {
+		if (player != null) {
 			clean.removePlayer(player, function() {
 				console.log('DEREGISTER: ' + steamID);
-				response.end();
+				common.respondJSON.call(me, {status: 'OK', description: steamID + ' has been deregistered.'});
 			});
 		} else {
-			response.end();
+			common.respondError.call(me);
 		}
 	});
 };
@@ -79,7 +80,7 @@ exports.update = function() {
 
 	Player.findOne({ steamID: steamID}, function(err, player) {
 		if (player == null) {
-			common.respondError().call(me);
+			common.respondError.call(me);
 			return;
 		}
 		player.save();

@@ -46,6 +46,11 @@ describe('API v1', function() {
 				.expect(400, done);
 		});
 
+		it('doesn\'nt crash if wrong steamID', function(done) {
+			request(app).get('/v1/update?steamID=1')
+				.expect(400, done);
+		});
+
 		it('update show new person', function(done) {
 			request(app).get('/v1/register?region=Europe&steamID=12345&nickname=John&build=200&server=127.0.0.1:27015')
 				.end(function(err, response) {
@@ -94,6 +99,11 @@ describe('API v1', function() {
 	describe('/deregister', function() {
 		it('fail if no steamID', function(done) {
 			request(app).get('/v1/deregister')
+				.expect(400, done);
+		});
+
+		it('doesn\'nt crash if wrong steamID', function(done) {
+			request(app).get('/v1/deregister?steamID=1')
 				.expect(400, done);
 		});
 

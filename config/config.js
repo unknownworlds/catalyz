@@ -29,7 +29,7 @@ nconf.env('__').overrides({
 		'Africa',
 		'Other'
 	],
-	PORT: 80
+	PORT: 8000
 });
 
 module.exports = nconf;
