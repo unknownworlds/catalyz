@@ -15,6 +15,11 @@ describe('API v1', function() {
 		db.drop(done);
 	});
 
+	after(function(done) {
+		db.stopTest();
+		done();
+	});
+
 	describe('/register', function() {
 		it('fail if not every GET param', function(done) {
 			request(app).get('/v1/register')
