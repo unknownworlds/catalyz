@@ -40,16 +40,24 @@ GroupSchema.methods.updateCount = function() {
 };
 
 GroupSchema.methods.addPlayer = function(player) {
-	this.players.push({
-		steamID: player.steamID,
-		nickname: player.nickname
+	var test = false;
+
+	_.each(this.players, function(p) {
+		test = test || p.steamID == player.steamID;
 	});
 
-	if (this.players.length >= conf.get('group:min')) {
-		this.hasStarted = true;
-	}
+	if (!test) {
+		this.players.push({
+			steamID: player.steamID,
+			nickname: player.nickname
+		});
 
-	this.updateCount();
+		if (this.players.length >= conf.get('group:min')) {
+			this.hasStarted = true;
+		}
+
+		this.updateCount();
+	}
 };
 
 GroupSchema.methods.removePlayer = function(player) {

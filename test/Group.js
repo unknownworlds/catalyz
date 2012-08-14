@@ -63,6 +63,27 @@ describe('Group', function() {
 		});
 	});
 
+	it('can\'t add severla time a player', function(done) {
+		var p1 = models.createPlayer("1", "Marc"),
+			p2 = models.createPlayer("1", "Marc"),
+			p3 = models.createPlayer("1", "Marc");
+		
+		var g = models.createGroup();
+
+		g.addPlayer(p1);
+		g.addPlayer(p2);
+		g.addPlayer(p3);
+
+		g.save(function(err) {
+			Group.findOne({}, function(err, group) {
+				group.players.length.should.equal(1);
+				group.playerCount.should.equal(1);
+				group.hasStarted.should.be.false;
+				done();
+			});
+		});
+	});
+
 	it('different region give different group', function(done) {
 		function Run(i, players, callback) {
 			if ( i < players.length) {
