@@ -11,7 +11,7 @@ var checkParameter = function(list) {
 	var test = true;
 
 	_.each(list, function(item) {
-		test = test && item ? true : false;
+		test = test && item != undefined && item != null ? true : false;
 	});
 
 	if (!test) {

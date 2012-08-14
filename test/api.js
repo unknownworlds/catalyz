@@ -28,7 +28,7 @@ describe('API v1', function() {
 		});
 
 		it('return group and player', function(done) {
-			request(app).get('/v1/register?region=Europe&steamID=12345&nickname=John&build=200&server=120.0.0.1:27015')
+			request(app).get('/v1/register?region=Europe&steamID=0&nickname=John&build=200&server=120.0.0.1:27015')
 				.expect('Content-Type', /json/)
 				.expect(200)
 				.end(function(err, response) {
@@ -38,7 +38,7 @@ describe('API v1', function() {
 					body.group.should.have.property('server');
 					body.should.have.property('player');
 					body.player.should.have.property('server');
-					body.player.should.include({ steamID: "12345", nickname: "John"});
+					body.player.should.include({ steamID: "0", nickname: "John"});
 					body.player.should.have.property('groupID');
 					done();
 				});
