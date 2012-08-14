@@ -7,8 +7,9 @@ var Player = require('../models/Player'),
 	Group  = require('../models/Group');
 
 exports.register = function() {
-	var request = this.req,
-		response = this.res;
+	var request  = this.req,
+		response = this.res,
+		me       = this;
 
 	var query = url.parse(request.url, true).query,
 		server = query.server,
@@ -20,6 +21,20 @@ exports.register = function() {
 	if (!common.checkParameter.call(this, [server, steamID, build, region, nickname])) return;
 
 	Player.findOne({'steamID' : steamID}, function(err, player) {
+		var callback = function(err) {
+			if (err) {
+				common.respondError.call(me);
+			}
+
+			Group.GetPlayerGroup(player, function(group) {
+				var toSend = {
+					player: player,
+					group: group
+				};
+				common.respondJSON.call(me, toSend);
+			});
+		};
+
 		if (player == null) {
 			var player = new Player({
 				steamID: steamID,
@@ -28,20 +43,10 @@ exports.register = function() {
 				build: build,
 				region: region,
 			});
-			player.save();
-		}
-
-		Group.GetPlayerGroup(player, function(group) {
-			var toSend = {
-				player: player,
-				group: group
-			};
-
-			console.log('REGISTER: ' + steamID);
-			response.writeHead(200, {"Content-Type": "application/json"});
-			response.write(JSON.stringify(toSend));
-			response.end();
-		});
+			player.save(callback);
+		} else {
+			callback();
+		}	
 	});
 };
 
@@ -59,7 +64,6 @@ exports.deregister = function() {
 	Player.findOne({'steamID' : steamID}, function(err, player) {
 		if (player != null) {
 			clean.removePlayer(player, function() {
-				console.log('DEREGISTER: ' + steamID);
 				common.respondJSON.call(me, {status: 'OK', description: steamID + ' has been deregistered.'});
 			});
 		} else {

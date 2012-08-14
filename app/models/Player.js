@@ -14,7 +14,7 @@ var PlayerSchema = new Schema({
 	updateDate: Date
 });
 
-PlayerSchema.index({steamID: 1, groupID: 1, region: 1, build: 1});
+PlayerSchema.index({steamID: { unique: true }, groupID: 1, region: 1, build: 1});
 
 PlayerSchema.pre('save', function(next) {
 	this.updateDate = new Date();
