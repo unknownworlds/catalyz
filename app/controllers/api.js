@@ -1,5 +1,7 @@
 var url = require('url');
 
+var Continents = require('../../lib/geodata/Continents');
+
 var common  = require('./common'),
 	clean = require('./clean');
 
@@ -19,6 +21,13 @@ exports.register = function() {
 		nickname = query.nickname;
 
 	if (!common.checkParameter.call(this, [server, steamID, build, region, nickname])) return;
+
+	if (region.length == 2) {
+		region = Continents.fromCountry(region);
+		if (!region) {
+			region = "North America";
+		}
+	}
 
 	Player.findOne({'steamID' : steamID}, function(err, player) {
 		var callback = function(err) {

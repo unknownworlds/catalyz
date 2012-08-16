@@ -3,12 +3,15 @@ var db = require('./fixtures/database'),
 	should = require('should');
 
 var app = require('../app/server'),
+	Continents = require('../lib/geodata/Continents'),
 	Group = require('../app/models/Group');
 
 describe('API v1', function() {
 	before(function(done) {
 		db.startTest();
-		db.drop(done);
+		db.drop(function() {
+			Continents.init(done);
+		});
 	});
 
 	beforeEach(function(done) {
@@ -28,7 +31,7 @@ describe('API v1', function() {
 		});
 
 		it('return group and player', function(done) {
-			request(app).get('/v1/register?region=Europe&steamID=0&nickname=John&build=200&server=120.0.0.1:27015')
+			request(app).get('/v1/register?region=FR&steamID=0&nickname=John&build=200&server=120.0.0.1:27015')
 				.expect('Content-Type', /json/)
 				.expect(200)
 				.end(function(err, response) {
@@ -38,7 +41,7 @@ describe('API v1', function() {
 					body.group.should.have.property('server');
 					body.should.have.property('player');
 					body.player.should.have.property('server');
-					body.player.should.include({ steamID: "0", nickname: "John"});
+					body.player.should.include({ steamID: "0", nickname: "John", region: "Europe"});
 					body.player.should.have.property('groupID');
 					done();
 				});
@@ -75,20 +78,20 @@ describe('API v1', function() {
 
 	describe('/status', function() {
 		it('count are ok', function(done) {
-			request(app).get('/v1/register?region=Europe&steamID=1&nickname=John&build=200&server=120.0.0.1:27015')
+			request(app).get('/v1/register?region=GB&steamID=1&nickname=John&build=200&server=120.0.0.1:27015')
 				.end(function(err, response) {
-					request(app).get('/v1/register?region=Asia&steamID=2&nickname=Jane&build=200&server=120.0.0.1:27015')
+					request(app).get('/v1/register?region=CN&steamID=2&nickname=Jane&build=200&server=120.0.0.1:27015')
 						.end(function(err, response) {
-							request(app).get('/v1/register?region=US_West&steamID=3&nickname=Jane&build=200&server=120.0.0.1:27015')
+							request(app).get('/v1/register?region=US&steamID=3&nickname=Jane&build=200&server=120.0.0.1:27015')
 								.end(function(err, response) {
-									request(app).get('/v1/register?region=Europe&steamID=4&nickname=Jane&build=200&server=120.0.0.1:27015')
+									request(app).get('/v1/register?region=FR&steamID=4&nickname=Jane&build=200&server=120.0.0.1:27015')
 										.end(function(err, response) {
 											request(app).get('/v1/status')
 												.end(function(err, response) {
 													var body = response.body;
 													body.playerCount.should.equal(4);
 													body.groupCount.should.equal(3);
-													body.regions.US_West.should.equal(1);
+													body.regions['North America'].should.equal(1);
 													body.regions.Europe.should.equal(2);
 													body.regions.Asia.should.equal(1);
 													body.regions.Africa.should.equal(0);

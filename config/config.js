@@ -19,15 +19,12 @@ nconf.env('__').overrides({
 		max: 12 // maximum number of player to start
 	},
 	regions: [
-		'US_East',
-		'US_West',
-		'South_America',
+		'North America',
+		'South America',
 		'Europe',
 		'Asia',
-		'Australia',
-		'Middle_East',
-		'Africa',
-		'Other'
+		'Oceania',
+		'Africa'
 	],
 	PORT: 8000
 });
