@@ -1,0 +1,2954 @@
+<table>
+  <tr>
+    <th>Continent</th>
+    <th>Region</th>
+    <th>Country</th>
+    <th>Capital</th>
+    <th>FIPS</th>
+    <th>ISO (2)</th>
+    <th>ISO (3)</th>
+    <th>ISO (No)</th>
+    <th>Internet</th>
+    <th>Note</th>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>Afghanistan</td>
+    <td>Kabul</td>
+    <td>AF</td>
+    <td>AF</td>
+    <td>AFG</td>
+    <td>004</td>
+    <td>AF</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Albania</td>
+    <td>Tirana</td>
+    <td>AL</td>
+    <td>AL</td>
+    <td>ALB</td>
+    <td>008</td>
+    <td>AL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Northern Africa</td>
+    <td>Algeria</td>
+    <td>Algiers</td>
+    <td>AG</td>
+    <td>DZ</td>
+    <td>DZA</td>
+    <td>012</td>
+    <td>DZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>American Samoa</td>
+    <td>Pago Pago</td>
+    <td>AQ</td>
+    <td>AS</td>
+    <td>ASM</td>
+    <td>016</td>
+    <td>AS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South West Europe</td>
+    <td>Andorra</td>
+    <td>Andorra la Vella</td>
+    <td>AN</td>
+    <td>AD</td>
+    <td>AND</td>
+    <td>020</td>
+    <td>AD</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Angola</td>
+    <td>Luanda</td>
+    <td>AO</td>
+    <td>AO</td>
+    <td>AGO</td>
+    <td>024</td>
+    <td>AO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Anguilla</td>
+    <td>The Valley</td>
+    <td>AV</td>
+    <td>AI</td>
+    <td>AIA</td>
+    <td>660</td>
+    <td>AI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Antigua and Barbuda</td>
+    <td>Saint John's</td>
+    <td>AC</td>
+    <td>AG</td>
+    <td>ATG</td>
+    <td>028</td>
+    <td>AG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Argentina</td>
+    <td>Buenos Aires</td>
+    <td>AR</td>
+    <td>AR</td>
+    <td>ARG</td>
+    <td>032</td>
+    <td>AR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Armenia</td>
+    <td>Yerevan</td>
+    <td>AM</td>
+    <td>AM</td>
+    <td>ARM</td>
+    <td>051</td>
+    <td>AM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Aruba</td>
+    <td>Oranjestad</td>
+    <td>AA</td>
+    <td>AW</td>
+    <td>ABW</td>
+    <td>533</td>
+    <td>AW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Australia</td>
+    <td>Canberra</td>
+    <td>AS</td>
+    <td>AU</td>
+    <td>AUS</td>
+    <td>036</td>
+    <td>AU</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Central Europe</td>
+    <td>Austria</td>
+    <td>Vienna</td>
+    <td>AU</td>
+    <td>AT</td>
+    <td>AUT</td>
+    <td>040</td>
+    <td>AT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Azerbaijan</td>
+    <td>Baku (Baki)</td>
+    <td>AJ</td>
+    <td>AZ</td>
+    <td>AZE</td>
+    <td>031</td>
+    <td>AZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Bahamas, The</td>
+    <td>Nassau</td>
+    <td>BF</td>
+    <td>BS</td>
+    <td>BHS</td>
+    <td>044</td>
+    <td>BS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Bahrain</td>
+    <td>Manama</td>
+    <td>BA</td>
+    <td>BH</td>
+    <td>BHR</td>
+    <td>048</td>
+    <td>BH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>Bangladesh</td>
+    <td>Dhaka</td>
+    <td>BG</td>
+    <td>BD</td>
+    <td>BGD</td>
+    <td>050</td>
+    <td>BD</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Barbados</td>
+    <td>Bridgetown</td>
+    <td>BB</td>
+    <td>BB</td>
+    <td>BRB</td>
+    <td>052</td>
+    <td>BB</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Eastern Europe</td>
+    <td>Belarus</td>
+    <td>Minsk</td>
+    <td>BO</td>
+    <td>BY</td>
+    <td>BLR</td>
+    <td>112</td>
+    <td>BY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>Belgium</td>
+    <td>Brussels</td>
+    <td>BE</td>
+    <td>BE</td>
+    <td>BEL</td>
+    <td>056</td>
+    <td>BE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>Central America</td>
+    <td>Belize</td>
+    <td>Belmopan</td>
+    <td>BH</td>
+    <td>BZ</td>
+    <td>BLZ</td>
+    <td>084</td>
+    <td>BZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Benin</td>
+    <td>Porto-Novo³</td>
+    <td>BN</td>
+    <td>BJ</td>
+    <td>BEN</td>
+    <td>204</td>
+    <td>BJ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Bermuda</td>
+    <td>Hamilton</td>
+    <td>BD</td>
+    <td>BM</td>
+    <td>BMU</td>
+    <td>060</td>
+    <td>BM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>Bhutan</td>
+    <td>Thimphu</td>
+    <td>BT</td>
+    <td>BT</td>
+    <td>BTN</td>
+    <td>064</td>
+    <td>BT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Bolivia</td>
+    <td>La Paz / Sucre</td>
+    <td>BL</td>
+    <td>BO</td>
+    <td>BOL</td>
+    <td>068</td>
+    <td>BO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Bosnia and Herzegovina</td>
+    <td>Sarajevo</td>
+    <td>BK</td>
+    <td>BA</td>
+    <td>BIH</td>
+    <td>070</td>
+    <td>BA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Botswana</td>
+    <td>Gaborone</td>
+    <td>BC</td>
+    <td>BW</td>
+    <td>BWA</td>
+    <td>072</td>
+    <td>BW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Brazil</td>
+    <td>Brasilia</td>
+    <td>BR</td>
+    <td>BR</td>
+    <td>BRA</td>
+    <td>076</td>
+    <td>BR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>British Virgin Islands</td>
+    <td>Road Town</td>
+    <td>VI</td>
+    <td>VG</td>
+    <td>VGB</td>
+    <td>092</td>
+    <td>VG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Brunei</td>
+    <td>Bandar Seri Begawan</td>
+    <td>BX</td>
+    <td>BN</td>
+    <td>BRN</td>
+    <td>096</td>
+    <td>BN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Bulgaria</td>
+    <td>Sofia</td>
+    <td>BU</td>
+    <td>BG</td>
+    <td>BGR</td>
+    <td>100</td>
+    <td>BG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Burkina Faso</td>
+    <td>Ouagadougou</td>
+    <td>UV</td>
+    <td>BF</td>
+    <td>BFA</td>
+    <td>854</td>
+    <td>BF</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Central Africa</td>
+    <td>Burundi</td>
+    <td>Bujumbura</td>
+    <td>BY</td>
+    <td>BI</td>
+    <td>BDI</td>
+    <td>108</td>
+    <td>BI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Cambodia</td>
+    <td>Phnom Penh</td>
+    <td>CB</td>
+    <td>KH</td>
+    <td>KHM</td>
+    <td>116</td>
+    <td>KH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Cameroon</td>
+    <td>Yaounde</td>
+    <td>CM</td>
+    <td>CM</td>
+    <td>CMR</td>
+    <td>120</td>
+    <td>CM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>North America</td>
+    <td>Canada</td>
+    <td>Ottawa</td>
+    <td>CA</td>
+    <td>CA</td>
+    <td>CAN</td>
+    <td>124</td>
+    <td>CA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Cape Verde</td>
+    <td>Praia</td>
+    <td>CV</td>
+    <td>CV</td>
+    <td>CPV</td>
+    <td>132</td>
+    <td>CV</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Cayman Islands</td>
+    <td>George Town</td>
+    <td>CJ</td>
+    <td>KY</td>
+    <td>CYM</td>
+    <td>136</td>
+    <td>KY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Central Africa</td>
+    <td>Central African Republic</td>
+    <td>Bangui</td>
+    <td>CT</td>
+    <td>CF</td>
+    <td>CAF</td>
+    <td>140</td>
+    <td>CF</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Central Africa</td>
+    <td>Chad</td>
+    <td>N'Djamena</td>
+    <td>CD</td>
+    <td>TD</td>
+    <td>TCD</td>
+    <td>148</td>
+    <td>TD</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Chile</td>
+    <td>Santiago</td>
+    <td>CI</td>
+    <td>CL</td>
+    <td>CHL</td>
+    <td>152</td>
+    <td>CL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>East Asia</td>
+    <td>China</td>
+    <td>Beijing</td>
+    <td>CH</td>
+    <td>CN</td>
+    <td>CHN</td>
+    <td>156</td>
+    <td>CN</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Christmas Island</td>
+    <td>The Settlement</td>
+    <td>KT</td>
+    <td>CX</td>
+    <td>CXR</td>
+    <td>162</td>
+    <td>CX</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Cocos (Keeling) Islands</td>
+    <td>West Island</td>
+    <td>CK</td>
+    <td>CC</td>
+    <td>CCK</td>
+    <td>166</td>
+    <td>CC</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Colombia</td>
+    <td>Bogota</td>
+    <td>CO</td>
+    <td>CO</td>
+    <td>COL</td>
+    <td>170</td>
+    <td>CO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Indian Ocean</td>
+    <td>Comoros</td>
+    <td>Moroni</td>
+    <td>CN</td>
+    <td>KM</td>
+    <td>COM</td>
+    <td>174</td>
+    <td>KM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Central Africa</td>
+    <td>Congo, Republic of the</td>
+    <td>Brazzaville</td>
+    <td>CF</td>
+    <td>CG</td>
+    <td>COG</td>
+    <td>178</td>
+    <td>CG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Cook Islands</td>
+    <td>Avarua</td>
+    <td>CW</td>
+    <td>CK</td>
+    <td>COK</td>
+    <td>184</td>
+    <td>CK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>Central America</td>
+    <td>Costa Rica</td>
+    <td>San Jose</td>
+    <td>CS</td>
+    <td>CR</td>
+    <td>CRI</td>
+    <td>188</td>
+    <td>CR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Cote d'Ivoire</td>
+    <td>Yamoussoukro</td>
+    <td>IV</td>
+    <td>CI</td>
+    <td>CIV</td>
+    <td>384</td>
+    <td>CI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Croatia</td>
+    <td>Zagreb</td>
+    <td>HR</td>
+    <td>HR</td>
+    <td>HRV</td>
+    <td>191</td>
+    <td>HR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Cuba</td>
+    <td>Havana</td>
+    <td>CU</td>
+    <td>CU</td>
+    <td>CUB</td>
+    <td>192</td>
+    <td>CU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Cyprus</td>
+    <td>Nicosia</td>
+    <td>CY</td>
+    <td>CY</td>
+    <td>CYP</td>
+    <td>196</td>
+    <td>CY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Central Europe</td>
+    <td>Czech Republic</td>
+    <td>Prague</td>
+    <td>EZ</td>
+    <td>CZ</td>
+    <td>CZE</td>
+    <td>203</td>
+    <td>CZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Northern Europe</td>
+    <td>Denmark</td>
+    <td>Copenhagen</td>
+    <td>DA</td>
+    <td>DK</td>
+    <td>DNK</td>
+    <td>208</td>
+    <td>DK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Eastern Africa</td>
+    <td>Djibouti</td>
+    <td>Djibouti</td>
+    <td>DJ</td>
+    <td>DJ</td>
+    <td>DJI</td>
+    <td>262</td>
+    <td>DJ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Dominica</td>
+    <td>Roseau</td>
+    <td>DO</td>
+    <td>DM</td>
+    <td>DMA</td>
+    <td>212</td>
+    <td>DM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Dominican Republic</td>
+    <td>Santo Domingo</td>
+    <td>DR</td>
+    <td>DO</td>
+    <td>DOM</td>
+    <td>214</td>
+    <td>DO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Ecuador</td>
+    <td>Quito</td>
+    <td>EC</td>
+    <td>EC</td>
+    <td>ECU</td>
+    <td>218</td>
+    <td>EC</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Northern Africa</td>
+    <td>Egypt</td>
+    <td>Cairo</td>
+    <td>EG</td>
+    <td>EG</td>
+    <td>EGY</td>
+    <td>818</td>
+    <td>EG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>Central America</td>
+    <td>El Salvador</td>
+    <td>San Salvador</td>
+    <td>ES</td>
+    <td>SV</td>
+    <td>SLV</td>
+    <td>222</td>
+    <td>SV</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Equatorial Guinea</td>
+    <td>Malabo</td>
+    <td>EK</td>
+    <td>GQ</td>
+    <td>GNQ</td>
+    <td>226</td>
+    <td>GQ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Eastern Africa</td>
+    <td>Eritrea</td>
+    <td>Asmara</td>
+    <td>ER</td>
+    <td>ER</td>
+    <td>ERI</td>
+    <td>232</td>
+    <td>ER</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Eastern Europe</td>
+    <td>Estonia</td>
+    <td>Tallinn</td>
+    <td>EN</td>
+    <td>EE</td>
+    <td>EST</td>
+    <td>233</td>
+    <td>EE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Eastern Africa</td>
+    <td>Ethiopia</td>
+    <td>Addis Ababa</td>
+    <td>ET</td>
+    <td>ET</td>
+    <td>ETH</td>
+    <td>231</td>
+    <td>ET</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Falkland Islands (Islas Malvinas)</td>
+    <td>Stanley</td>
+    <td>FA</td>
+    <td>FK</td>
+    <td>FLK</td>
+    <td>238</td>
+    <td>FK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Northern Europe</td>
+    <td>Faroe Islands</td>
+    <td>Torshavn</td>
+    <td>FO</td>
+    <td>FO</td>
+    <td>FRO</td>
+    <td>234</td>
+    <td>FO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Fiji</td>
+    <td>Suva</td>
+    <td>FJ</td>
+    <td>FJ</td>
+    <td>FJI</td>
+    <td>242</td>
+    <td>FJ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Northern Europe</td>
+    <td>Finland</td>
+    <td>Helsinki</td>
+    <td>FI</td>
+    <td>FI</td>
+    <td>FIN</td>
+    <td>246</td>
+    <td>FI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>France</td>
+    <td>Paris</td>
+    <td>FR</td>
+    <td>FR</td>
+    <td>FRA</td>
+    <td>250</td>
+    <td>FR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>French Guiana</td>
+    <td>Cayenne</td>
+    <td>FG</td>
+    <td>GF</td>
+    <td>GUF</td>
+    <td>254</td>
+    <td>GF</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>French Polynesia</td>
+    <td>Papeete</td>
+    <td>FP</td>
+    <td>PF</td>
+    <td>PYF</td>
+    <td>258</td>
+    <td>PF</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Gabon</td>
+    <td>Libreville</td>
+    <td>GB</td>
+    <td>GA</td>
+    <td>GAB</td>
+    <td>266</td>
+    <td>GA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Gambia, The</td>
+    <td>Banjul</td>
+    <td>GA</td>
+    <td>GM</td>
+    <td>GMB</td>
+    <td>270</td>
+    <td>GM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Georgia</td>
+    <td>T'bilisi</td>
+    <td>GG</td>
+    <td>GE</td>
+    <td>GEO</td>
+    <td>268</td>
+    <td>GE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>Germany</td>
+    <td>Berlin</td>
+    <td>GM</td>
+    <td>DE</td>
+    <td>DEU</td>
+    <td>276</td>
+    <td>DE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Ghana</td>
+    <td>Accra</td>
+    <td>GH</td>
+    <td>GH</td>
+    <td>GHA</td>
+    <td>288</td>
+    <td>GH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South West Europe</td>
+    <td>Gibraltar</td>
+    <td>Gibraltar</td>
+    <td>GI</td>
+    <td>GI</td>
+    <td>GIB</td>
+    <td>292</td>
+    <td>GI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Greece</td>
+    <td>Athens</td>
+    <td>GR</td>
+    <td>GR</td>
+    <td>GRC</td>
+    <td>300</td>
+    <td>GR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>North America</td>
+    <td>Greenland</td>
+    <td>Nuuk (Godthab)</td>
+    <td>GL</td>
+    <td>GL</td>
+    <td>GRL</td>
+    <td>304</td>
+    <td>GL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Grenada</td>
+    <td>Saint George's</td>
+    <td>GJ</td>
+    <td>GD</td>
+    <td>GRD</td>
+    <td>308</td>
+    <td>GD</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Guadeloupe</td>
+    <td>Basse-Terre</td>
+    <td>GP</td>
+    <td>GP</td>
+    <td>GLP</td>
+    <td>312</td>
+    <td>GP</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Guam</td>
+    <td>Hagatna (Agana)</td>
+    <td>GQ</td>
+    <td>GU</td>
+    <td>GUM</td>
+    <td>316</td>
+    <td>GU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>Central America</td>
+    <td>Guatemala</td>
+    <td>Guatemala</td>
+    <td>GT</td>
+    <td>GT</td>
+    <td>GTM</td>
+    <td>320</td>
+    <td>GT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>Guernsey</td>
+    <td>Saint Peter Port</td>
+    <td>--</td>
+    <td>--</td>
+    <td>--</td>
+    <td></td>
+    <td>--</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Guinea</td>
+    <td>Conakry</td>
+    <td>GV</td>
+    <td>GN</td>
+    <td>GIN</td>
+    <td>324</td>
+    <td>GN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Guinea-Bissau</td>
+    <td>Bissau</td>
+    <td>PU</td>
+    <td>GW</td>
+    <td>GNB</td>
+    <td>624</td>
+    <td>GW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Guyana</td>
+    <td>Georgetown</td>
+    <td>GY</td>
+    <td>GY</td>
+    <td>GUY</td>
+    <td>328</td>
+    <td>GY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Haiti</td>
+    <td>Port-au-Prince</td>
+    <td>HA</td>
+    <td>HT</td>
+    <td>HTI</td>
+    <td>332</td>
+    <td>HT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Southern Europe</td>
+    <td>Holy See (Vatican City)</td>
+    <td>Vatican City</td>
+    <td>VT</td>
+    <td>VA</td>
+    <td>VAT</td>
+    <td>336</td>
+    <td>VA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>Central America</td>
+    <td>Honduras</td>
+    <td>Tegucigalpa</td>
+    <td>HO</td>
+    <td>HN</td>
+    <td>HND</td>
+    <td>340</td>
+    <td>HN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Central Europe</td>
+    <td>Hungary</td>
+    <td>Budapest</td>
+    <td>HU</td>
+    <td>HU</td>
+    <td>HUN</td>
+    <td>348</td>
+    <td>HU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Northern Europe</td>
+    <td>Iceland</td>
+    <td>Reykjavik</td>
+    <td>IC</td>
+    <td>IS</td>
+    <td>ISL</td>
+    <td>352</td>
+    <td>IS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>India</td>
+    <td>New Delhi</td>
+    <td>IN</td>
+    <td>IN</td>
+    <td>IND</td>
+    <td>356</td>
+    <td>IN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Indonesia</td>
+    <td>Jakarta</td>
+    <td>ID</td>
+    <td>ID</td>
+    <td>IDN</td>
+    <td>360</td>
+    <td>ID</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Iran</td>
+    <td>Tehran</td>
+    <td>IR</td>
+    <td>IR</td>
+    <td>IRN</td>
+    <td>364</td>
+    <td>IR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Iraq</td>
+    <td>Baghdad</td>
+    <td>IZ</td>
+    <td>IQ</td>
+    <td>IRQ</td>
+    <td>368</td>
+    <td>IQ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>Ireland</td>
+    <td>Dublin</td>
+    <td>EI</td>
+    <td>IE</td>
+    <td>IRL</td>
+    <td>372</td>
+    <td>IE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Israel</td>
+    <td>Jerusalem</td>
+    <td>IS</td>
+    <td>IL</td>
+    <td>ISR</td>
+    <td>376</td>
+    <td>IL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Southern Europe</td>
+    <td>Italy</td>
+    <td>Rome</td>
+    <td>IT</td>
+    <td>IT</td>
+    <td>ITA</td>
+    <td>380</td>
+    <td>IT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Jamaica</td>
+    <td>Kingston</td>
+    <td>JM</td>
+    <td>JM</td>
+    <td>JAM</td>
+    <td>388</td>
+    <td>JM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Northern Europe</td>
+    <td>Jan Mayen</td>
+    <td>-</td>
+    <td>--</td>
+    <td>--</td>
+    <td>--</td>
+    <td></td>
+    <td>--</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>East Asia</td>
+    <td>Japan</td>
+    <td>Tokyo</td>
+    <td>JA</td>
+    <td>JP</td>
+    <td>JPN</td>
+    <td>392</td>
+    <td>JP</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Jordan</td>
+    <td>Amman</td>
+    <td>JO</td>
+    <td>JO</td>
+    <td>JOR</td>
+    <td>400</td>
+    <td>JO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>Central Asia</td>
+    <td>Kazakhstan</td>
+    <td>Astana (Akmola)</td>
+    <td>KZ</td>
+    <td>KZ</td>
+    <td>KAZ</td>
+    <td>398</td>
+    <td>KZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Eastern Africa</td>
+    <td>Kenya</td>
+    <td>Nairobi</td>
+    <td>KE</td>
+    <td>KE</td>
+    <td>KEN</td>
+    <td>404</td>
+    <td>KE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Kiribati</td>
+    <td>Tarawa</td>
+    <td>KR</td>
+    <td>KI</td>
+    <td>KIR</td>
+    <td>296</td>
+    <td>KI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>East Asia</td>
+    <td>Korea, North</td>
+    <td>P'yongyang</td>
+    <td>KN</td>
+    <td>KP</td>
+    <td>PRK</td>
+    <td>408</td>
+    <td>KP</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>East Asia</td>
+    <td>Korea, South</td>
+    <td>Seoul</td>
+    <td>KS</td>
+    <td>KR</td>
+    <td>KOR</td>
+    <td>410</td>
+    <td>KR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Kuwait</td>
+    <td>Kuwait</td>
+    <td>KU</td>
+    <td>KW</td>
+    <td>KWT</td>
+    <td>414</td>
+    <td>KW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>Central Asia</td>
+    <td>Kyrgyzstan</td>
+    <td>Bishkek</td>
+    <td>KG</td>
+    <td>KG</td>
+    <td>KGZ</td>
+    <td>417</td>
+    <td>KG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Laos</td>
+    <td>Vientiane</td>
+    <td>LA</td>
+    <td>LA</td>
+    <td>LAO</td>
+    <td>418</td>
+    <td>LA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Eastern Europe</td>
+    <td>Latvia</td>
+    <td>Riga</td>
+    <td>LG</td>
+    <td>LV</td>
+    <td>LVA</td>
+    <td>428</td>
+    <td>LV</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Lebanon</td>
+    <td>Beirut</td>
+    <td>LE</td>
+    <td>LB</td>
+    <td>LBN</td>
+    <td>422</td>
+    <td>LB</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Lesotho</td>
+    <td>Maseru</td>
+    <td>LT</td>
+    <td>LS</td>
+    <td>LSO</td>
+    <td>426</td>
+    <td>LS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Liberia</td>
+    <td>Monrovia</td>
+    <td>LI</td>
+    <td>LR</td>
+    <td>LBR</td>
+    <td>430</td>
+    <td>LR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Northern Africa</td>
+    <td>Libya</td>
+    <td>Tripoli</td>
+    <td>LY</td>
+    <td>LY</td>
+    <td>LBY</td>
+    <td>434</td>
+    <td>LY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Central Europe</td>
+    <td>Liechtenstein</td>
+    <td>Vaduz</td>
+    <td>LS</td>
+    <td>LI</td>
+    <td>LIE</td>
+    <td>438</td>
+    <td>LI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Eastern Europe</td>
+    <td>Lithuania</td>
+    <td>Vilnius</td>
+    <td>LH</td>
+    <td>LT</td>
+    <td>LTU</td>
+    <td>440</td>
+    <td>LT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>Luxembourg</td>
+    <td>Luxembourg</td>
+    <td>LU</td>
+    <td>LU</td>
+    <td>LUX</td>
+    <td>442</td>
+    <td>LU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Macedonia</td>
+    <td>Skopje</td>
+    <td>MK</td>
+    <td>MK</td>
+    <td>MKD</td>
+    <td>807</td>
+    <td>MK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Indian Ocean</td>
+    <td>Madagascar</td>
+    <td>Antananarivo</td>
+    <td>MA</td>
+    <td>MG</td>
+    <td>MDG</td>
+    <td>450</td>
+    <td>MG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Malawi</td>
+    <td>Lilongwe</td>
+    <td>MI</td>
+    <td>MW</td>
+    <td>MWI</td>
+    <td>454</td>
+    <td>MW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Malaysia</td>
+    <td>Kuala Lumpur</td>
+    <td>MY</td>
+    <td>MY</td>
+    <td>MYS</td>
+    <td>458</td>
+    <td>MY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>Maldives</td>
+    <td>Male (Maale)</td>
+    <td>MV</td>
+    <td>MV</td>
+    <td>MDV</td>
+    <td>462</td>
+    <td>MV</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Mali</td>
+    <td>Bamako</td>
+    <td>ML</td>
+    <td>ML</td>
+    <td>MLI</td>
+    <td>466</td>
+    <td>ML</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Southern Europe</td>
+    <td>Malta</td>
+    <td>Valletta</td>
+    <td>MT</td>
+    <td>MT</td>
+    <td>MLT</td>
+    <td>470</td>
+    <td>MT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>Man, Isle of</td>
+    <td>Douglas</td>
+    <td>--</td>
+    <td>--</td>
+    <td>--</td>
+    <td></td>
+    <td>--</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Marshall Islands</td>
+    <td>Majuro</td>
+    <td>RM</td>
+    <td>MH</td>
+    <td>MHL</td>
+    <td>584</td>
+    <td>MH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Martinique</td>
+    <td>Fort-de-France</td>
+    <td>MB</td>
+    <td>MQ</td>
+    <td>MTQ</td>
+    <td>474</td>
+    <td>MQ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Mauritania</td>
+    <td>Nouakchott</td>
+    <td>MR</td>
+    <td>MR</td>
+    <td>MRT</td>
+    <td>478</td>
+    <td>MR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Indian Ocean</td>
+    <td>Mauritius</td>
+    <td>Port Louis</td>
+    <td>MP</td>
+    <td>MU</td>
+    <td>MUS</td>
+    <td>480</td>
+    <td>MU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Indian Ocean</td>
+    <td>Mayotte</td>
+    <td>Mamoutzou</td>
+    <td>MF</td>
+    <td>YT</td>
+    <td>MYT</td>
+    <td>175</td>
+    <td>YT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>Central America</td>
+    <td>Mexico</td>
+    <td>Mexico</td>
+    <td>MX</td>
+    <td>MX</td>
+    <td>MEX</td>
+    <td>484</td>
+    <td>MX</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Micronesia, Federated States of</td>
+    <td>Palikir</td>
+    <td></td>
+    <td>FM</td>
+    <td>FSM</td>
+    <td>583</td>
+    <td>FM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Eastern Europe</td>
+    <td>Moldova</td>
+    <td>Chisinau</td>
+    <td>MD</td>
+    <td>MD</td>
+    <td>MDA</td>
+    <td>498</td>
+    <td>MD</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>Monaco</td>
+    <td>Monaco</td>
+    <td>MN</td>
+    <td>MC</td>
+    <td>MCO</td>
+    <td>492</td>
+    <td>MC</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>Northern Asia</td>
+    <td>Mongolia</td>
+    <td>Ulaanbaatar</td>
+    <td>MG</td>
+    <td>MN</td>
+    <td>MNG</td>
+    <td>496</td>
+    <td>MN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Montserrat</td>
+    <td>Plymouth</td>
+    <td>MH</td>
+    <td>MS</td>
+    <td>MSR</td>
+    <td>500</td>
+    <td>MS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Northern Africa</td>
+    <td>Morocco</td>
+    <td>Rabat</td>
+    <td>MO</td>
+    <td>MA</td>
+    <td>MAR</td>
+    <td>504</td>
+    <td>MA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Mozambique</td>
+    <td>Maputo</td>
+    <td>MZ</td>
+    <td>MZ</td>
+    <td>MOZ</td>
+    <td>508</td>
+    <td>MZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Myanmar (Burma)</td>
+    <td>Rangoon (Yangon)</td>
+    <td>BM</td>
+    <td>MM</td>
+    <td>MMR</td>
+    <td>104</td>
+    <td>MM</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Namibia</td>
+    <td>Windhoek</td>
+    <td>WA</td>
+    <td>NA</td>
+    <td>NAM</td>
+    <td>516</td>
+    <td>NA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Nauru</td>
+    <td>no official capital</td>
+    <td>NR</td>
+    <td>NR</td>
+    <td>NRU</td>
+    <td>520</td>
+    <td>NR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>Nepal</td>
+    <td>Kathmandu</td>
+    <td>NP</td>
+    <td>NP</td>
+    <td>NPL</td>
+    <td>524</td>
+    <td>NP</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>Netherlands</td>
+    <td>Amsterdam</td>
+    <td>NL</td>
+    <td>NL</td>
+    <td>NLD</td>
+    <td>528</td>
+    <td>NL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Netherlands Antilles</td>
+    <td>Willemstad</td>
+    <td>NT</td>
+    <td>AN</td>
+    <td>ANT</td>
+    <td>530</td>
+    <td>AN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>New Caledonia</td>
+    <td>Noumea</td>
+    <td>NC</td>
+    <td>NC</td>
+    <td>NCL</td>
+    <td>540</td>
+    <td>NC</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>New Zealand</td>
+    <td>Wellington</td>
+    <td>NZ</td>
+    <td>NZ</td>
+    <td>NZL</td>
+    <td>554</td>
+    <td>NZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>Central America</td>
+    <td>Nicaragua</td>
+    <td>Managua</td>
+    <td>NU</td>
+    <td>NI</td>
+    <td>NIC</td>
+    <td>558</td>
+    <td>NI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Niger</td>
+    <td>Niamey</td>
+    <td>NG</td>
+    <td>NE</td>
+    <td>NER</td>
+    <td>562</td>
+    <td>NE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Nigeria</td>
+    <td>Abuja</td>
+    <td>NI</td>
+    <td>NG</td>
+    <td>NGA</td>
+    <td>566</td>
+    <td>NG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Niue</td>
+    <td>Alofi</td>
+    <td>NE</td>
+    <td>NU</td>
+    <td>NIU</td>
+    <td>570</td>
+    <td>NU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Norfolk Island</td>
+    <td>Kingston</td>
+    <td>NF</td>
+    <td>NF</td>
+    <td>NFK</td>
+    <td>574</td>
+    <td>NF</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Northern Mariana Islands</td>
+    <td>Saipan</td>
+    <td>CQ</td>
+    <td>MP</td>
+    <td>MNP</td>
+    <td>580</td>
+    <td>MP</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Northern Europe</td>
+    <td>Norway</td>
+    <td>Oslo</td>
+    <td>NO</td>
+    <td>NO</td>
+    <td>NOR</td>
+    <td>578</td>
+    <td>NO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Oman</td>
+    <td>Muscat</td>
+    <td>MU</td>
+    <td>OM</td>
+    <td>OMN</td>
+    <td>512</td>
+    <td>OM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>Pakistan</td>
+    <td>Islamabad</td>
+    <td>PK</td>
+    <td>PK</td>
+    <td>PAK</td>
+    <td>586</td>
+    <td>PK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Palau</td>
+    <td>Koror</td>
+    <td>PS</td>
+    <td>PW</td>
+    <td>PLW</td>
+    <td>585</td>
+    <td>PW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Palestine</td>
+    <td></td>
+    <td>--</td>
+    <td>--</td>
+    <td>--</td>
+    <td></td>
+    <td>--</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>Central America</td>
+    <td>Panama</td>
+    <td>Panama</td>
+    <td>PM</td>
+    <td>PA</td>
+    <td>PAN</td>
+    <td>591</td>
+    <td>PA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Papua New Guinea</td>
+    <td>Port Moresby</td>
+    <td>PP</td>
+    <td>PG</td>
+    <td>PNG</td>
+    <td>598</td>
+    <td>PG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Paraguay</td>
+    <td>Asuncion</td>
+    <td>PA</td>
+    <td>PY</td>
+    <td>PRY</td>
+    <td>600</td>
+    <td>PY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Peru</td>
+    <td>Lima</td>
+    <td>PE</td>
+    <td>PE</td>
+    <td>PER</td>
+    <td>604</td>
+    <td>PE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Philippines</td>
+    <td>Manila</td>
+    <td>RP</td>
+    <td>PH</td>
+    <td>PHL</td>
+    <td>608</td>
+    <td>PH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Pitcairn Islands</td>
+    <td>Adamstown</td>
+    <td>PC</td>
+    <td>PN</td>
+    <td>PCN</td>
+    <td>612</td>
+    <td>PN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Eastern Europe</td>
+    <td>Poland</td>
+    <td>Warsaw</td>
+    <td>PL</td>
+    <td>PL</td>
+    <td>POL</td>
+    <td>616</td>
+    <td>PL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South West Europe</td>
+    <td>Portugal</td>
+    <td>Lisbon</td>
+    <td>PO</td>
+    <td>PT</td>
+    <td>PRT</td>
+    <td>620</td>
+    <td>PT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Puerto Rico</td>
+    <td>San Juan</td>
+    <td>RQ</td>
+    <td>PR</td>
+    <td>PRI</td>
+    <td>630</td>
+    <td>PR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Qatar</td>
+    <td>Doha</td>
+    <td>QA</td>
+    <td>QA</td>
+    <td>QAT</td>
+    <td>634</td>
+    <td>QA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Indian Ocean</td>
+    <td>Reunion</td>
+    <td>Saint-Denis</td>
+    <td>RE</td>
+    <td>RE</td>
+    <td>REU</td>
+    <td>638</td>
+    <td>RE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Romania</td>
+    <td>Bucharest</td>
+    <td>RO</td>
+    <td>RO</td>
+    <td>ROM</td>
+    <td>642</td>
+    <td>RO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>Northern Asia</td>
+    <td>Russia</td>
+    <td>Moscow</td>
+    <td>RS</td>
+    <td>RU</td>
+    <td>RUS</td>
+    <td>643</td>
+    <td>RU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Central Africa</td>
+    <td>Rwanda</td>
+    <td>Kigali</td>
+    <td>RW</td>
+    <td>RW</td>
+    <td>RWA</td>
+    <td>646</td>
+    <td>RW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Saint Kitts and Nevis</td>
+    <td>Basseterre</td>
+    <td>SC</td>
+    <td>KN</td>
+    <td>KNA</td>
+    <td>659</td>
+    <td>KN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Saint Lucia</td>
+    <td>Castries</td>
+    <td>ST</td>
+    <td>LC</td>
+    <td>LCA</td>
+    <td>662</td>
+    <td>LC</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>North America</td>
+    <td>Saint Pierre and Miquelon</td>
+    <td>Saint-Pierre</td>
+    <td>SB</td>
+    <td>PM</td>
+    <td>SPM</td>
+    <td>666</td>
+    <td>PM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Saint Vincent and the Grenadines</td>
+    <td>Kingstown</td>
+    <td>VC</td>
+    <td>VC</td>
+    <td>VCT</td>
+    <td>670</td>
+    <td>VC</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Southern Europe</td>
+    <td>San Marino</td>
+    <td>San Marino</td>
+    <td>SM</td>
+    <td>SM</td>
+    <td>SMR</td>
+    <td>674</td>
+    <td>SM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Sao Tome and Principe</td>
+    <td>Sao Tome</td>
+    <td>TP</td>
+    <td>ST</td>
+    <td>STP</td>
+    <td>678</td>
+    <td>ST</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Saudi Arabia</td>
+    <td>Riyadh</td>
+    <td>SA</td>
+    <td>SA</td>
+    <td>SAU</td>
+    <td>682</td>
+    <td>SA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Senegal</td>
+    <td>Dakar</td>
+    <td>SG</td>
+    <td>SN</td>
+    <td>SEN</td>
+    <td>686</td>
+    <td>SN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Serbia and Montenegro</td>
+    <td>Belgrade / Podgorica</td>
+    <td>SR</td>
+    <td>--</td>
+    <td>--</td>
+    <td></td>
+    <td>--</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Indian Ocean</td>
+    <td>Seychelles</td>
+    <td>Victoria</td>
+    <td>SE</td>
+    <td>SC</td>
+    <td>SYC</td>
+    <td>690</td>
+    <td>SC</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Sierra Leone</td>
+    <td>Freetown</td>
+    <td>SL</td>
+    <td>SL</td>
+    <td>SLE</td>
+    <td>694</td>
+    <td>SL</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Singapore</td>
+    <td>Singapore</td>
+    <td>SN</td>
+    <td>SG</td>
+    <td>SGP</td>
+    <td>702</td>
+    <td>SG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Central Europe</td>
+    <td>Slovakia</td>
+    <td>Bratislava</td>
+    <td>LO</td>
+    <td>SK</td>
+    <td>SVK</td>
+    <td>703</td>
+    <td>SK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Slovenia</td>
+    <td>Ljubljana</td>
+    <td>SI</td>
+    <td>SI</td>
+    <td>SVN</td>
+    <td>705</td>
+    <td>SI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Solomon Islands</td>
+    <td>Honiara</td>
+    <td>BP</td>
+    <td>SB</td>
+    <td>SLB</td>
+    <td>090</td>
+    <td>SB</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Eastern Africa</td>
+    <td>Somalia</td>
+    <td>Mogadishu</td>
+    <td>SO</td>
+    <td>SO</td>
+    <td>SOM</td>
+    <td>706</td>
+    <td>SO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>South Africa</td>
+    <td>Pretoria¹</td>
+    <td>SF</td>
+    <td>ZA</td>
+    <td>ZAF</td>
+    <td>710</td>
+    <td>ZA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South West Europe</td>
+    <td>Spain</td>
+    <td>Madrid</td>
+    <td>SP</td>
+    <td>ES</td>
+    <td>ESP</td>
+    <td>724</td>
+    <td>ES</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>Sri Lanka</td>
+    <td>Colombo</td>
+    <td>CE</td>
+    <td>LK</td>
+    <td>LKA</td>
+    <td>144</td>
+    <td>LK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Northern Africa</td>
+    <td>Sudan</td>
+    <td>Khartoum</td>
+    <td>SU</td>
+    <td>SD</td>
+    <td>SDN</td>
+    <td>736</td>
+    <td>SD</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Suriname</td>
+    <td>Paramaribo</td>
+    <td>NS</td>
+    <td>SR</td>
+    <td>SUR</td>
+    <td>740</td>
+    <td>SR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Northern Europe</td>
+    <td>Svalbard</td>
+    <td>Longyearbyen</td>
+    <td>SV</td>
+    <td>SJ</td>
+    <td>SJM</td>
+    <td>744</td>
+    <td>SJ</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Swaziland</td>
+    <td>Mbabane²</td>
+    <td>WZ</td>
+    <td>SZ</td>
+    <td>SWZ</td>
+    <td>748</td>
+    <td>SZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Northern Europe</td>
+    <td>Sweden</td>
+    <td>Stockholm</td>
+    <td>SW</td>
+    <td>SE</td>
+    <td>SWE</td>
+    <td>752</td>
+    <td>SE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Central Europe</td>
+    <td>Switzerland</td>
+    <td>Bern</td>
+    <td>SZ</td>
+    <td>CH</td>
+    <td>CHE</td>
+    <td>756</td>
+    <td>CH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Syria</td>
+    <td>Damascus</td>
+    <td>SY</td>
+    <td>SY</td>
+    <td>SYR</td>
+    <td>760</td>
+    <td>SY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>East Asia</td>
+    <td>Taiwan</td>
+    <td>Taipei</td>
+    <td>TW</td>
+    <td>TW</td>
+    <td>TWN</td>
+    <td>158</td>
+    <td>TW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>Central Asia</td>
+    <td>Tajikistan</td>
+    <td>Dushanbe</td>
+    <td>TI</td>
+    <td>TJ</td>
+    <td>TJK</td>
+    <td>762</td>
+    <td>TJ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Eastern Africa</td>
+    <td>Tanzania</td>
+    <td>Dar es Salaam</td>
+    <td>TZ</td>
+    <td>TZ</td>
+    <td>TZA</td>
+    <td>834</td>
+    <td>TZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Thailand</td>
+    <td>Bangkok</td>
+    <td>TH</td>
+    <td>TH</td>
+    <td>THA</td>
+    <td>764</td>
+    <td>TH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Western Africa</td>
+    <td>Togo</td>
+    <td>Lome</td>
+    <td>TO</td>
+    <td>TG</td>
+    <td>TGO</td>
+    <td>768</td>
+    <td>TG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Tokelau</td>
+    <td>none</td>
+    <td>TL</td>
+    <td>TK</td>
+    <td>TKL</td>
+    <td>772</td>
+    <td>TK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Tonga</td>
+    <td>Nuku'alofa</td>
+    <td>TN</td>
+    <td>TO</td>
+    <td>TON</td>
+    <td>776</td>
+    <td>TO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Trinidad and Tobago</td>
+    <td>Port-of-Spain</td>
+    <td>TD</td>
+    <td>TT</td>
+    <td>TTO</td>
+    <td>780</td>
+    <td>TT</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Northern Africa</td>
+    <td>Tunisia</td>
+    <td>Tunis</td>
+    <td>TS</td>
+    <td>TN</td>
+    <td>TUN</td>
+    <td>788</td>
+    <td>TN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Turkey</td>
+    <td>Ankara</td>
+    <td>TU</td>
+    <td>TR</td>
+    <td>TUR</td>
+    <td>792</td>
+    <td>TR</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>Central Asia</td>
+    <td>Turkmenistan</td>
+    <td>Ashgabat</td>
+    <td>TX</td>
+    <td>TM</td>
+    <td>TKM</td>
+    <td>795</td>
+    <td>TM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Turks and Caicos Islands</td>
+    <td>Grand Turk</td>
+    <td>TK</td>
+    <td>TC</td>
+    <td>TCA</td>
+    <td>796</td>
+    <td>TC</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Tuvalu</td>
+    <td>Funafuti</td>
+    <td>TV</td>
+    <td>TV</td>
+    <td>TUV</td>
+    <td>798</td>
+    <td>TV</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Eastern Africa</td>
+    <td>Uganda</td>
+    <td>Kampala</td>
+    <td>UG</td>
+    <td>UG</td>
+    <td>UGA</td>
+    <td>800</td>
+    <td>UG</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Eastern Europe</td>
+    <td>Ukraine</td>
+    <td>Kiev</td>
+    <td>UP</td>
+    <td>UA</td>
+    <td>UKR</td>
+    <td>804</td>
+    <td>UA</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>United Arab Emirates</td>
+    <td>Abu Dhabi</td>
+    <td>TC</td>
+    <td>AE</td>
+    <td>ARE</td>
+    <td>784</td>
+    <td>AE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>United Kingdom</td>
+    <td>London</td>
+    <td>UK</td>
+    <td>GB</td>
+    <td>GBR</td>
+    <td>826</td>
+    <td>UK/GB</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>North America</td>
+    <td>United States</td>
+    <td>Washington, DC</td>
+    <td>US</td>
+    <td>US</td>
+    <td>USA</td>
+    <td>840</td>
+    <td>US</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Uruguay</td>
+    <td>Montevideo</td>
+    <td>UY</td>
+    <td>UY</td>
+    <td>URY</td>
+    <td>858</td>
+    <td>UY</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>Central Asia</td>
+    <td>Uzbekistan</td>
+    <td>Tashkent (Toshkent)</td>
+    <td>UZ</td>
+    <td>UZ</td>
+    <td>UZB</td>
+    <td>860</td>
+    <td>UZ</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Vanuatu</td>
+    <td>Port-Vila</td>
+    <td>NH</td>
+    <td>VU</td>
+    <td>VUT</td>
+    <td>548</td>
+    <td>VU</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>South America</td>
+    <td>Venezuela</td>
+    <td>Caracas</td>
+    <td>VE</td>
+    <td>VE</td>
+    <td>VEN</td>
+    <td>862</td>
+    <td>UE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>Vietnam</td>
+    <td>Hanoi</td>
+    <td>VM</td>
+    <td>VN</td>
+    <td>VNM</td>
+    <td>704</td>
+    <td>VN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Americas</td>
+    <td>West Indies</td>
+    <td>Virgin Islands</td>
+    <td>Charlotte Amalie</td>
+    <td>VQ</td>
+    <td>VI</td>
+    <td>VIR</td>
+    <td>850</td>
+    <td>VI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Wallis and Futuna</td>
+    <td>Mata-Utu (on Ile Uvea)</td>
+    <td>WF</td>
+    <td>WF</td>
+    <td>WLF</td>
+    <td>876</td>
+    <td>WF</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Northern Africa</td>
+    <td>Western Sahara</td>
+    <td>none</td>
+    <td>WI</td>
+    <td>EH</td>
+    <td>ESH</td>
+    <td>732</td>
+    <td>EH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>Pacific</td>
+    <td>Western Samoa</td>
+    <td>Apia</td>
+    <td>WS</td>
+    <td>WS</td>
+    <td>WSM</td>
+    <td>882</td>
+    <td>WS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South West Asia</td>
+    <td>Yemen</td>
+    <td>Sanaa</td>
+    <td>YM</td>
+    <td>YE</td>
+    <td>YEM</td>
+    <td>887</td>
+    <td>YE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Central Africa</td>
+    <td>Zaire (Dem Rep of Congo)</td>
+    <td>Kinshasa</td>
+    <td>CG</td>
+    <td>ZR</td>
+    <td>ZAR</td>
+    <td>180</td>
+    <td>ZR</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Zambia</td>
+    <td>Lusaka</td>
+    <td>ZA</td>
+    <td>ZM</td>
+    <td>ZWB</td>
+    <td>894</td>
+    <td>ZM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Africa</td>
+    <td>Southern Africa</td>
+    <td>Zimbabwe</td>
+    <td>Harare</td>
+    <td>ZI</td>
+    <td>ZW</td>
+    <td>ZWE</td>
+    <td>716</td>
+    <td>ZW</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>East Asia</td>
+    <td>Hong Kong (China)</td>
+    <td>Victoria</td>
+    <td>HK</td>
+    <td>HK</td>
+    <td>HKG</td>
+    <td>344</td>
+    <td>HK</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>East Asia</td>
+    <td>Macau (China)</td>
+    <td>Macau</td>
+    <td>MC</td>
+    <td>MO</td>
+    <td>MAC</td>
+    <td>446</td>
+    <td>MO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Antarctica</td>
+    <td>Antarctica</td>
+    <td>Antarctica</td>
+    <td></td>
+    <td>AY</td>
+    <td>AQ</td>
+    <td>ATA</td>
+    <td>010</td>
+    <td>AQ</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Atlantic Ocean</td>
+    <td>South Atlantic Ocean</td>
+    <td>Bouvet Island</td>
+    <td></td>
+    <td>BV</td>
+    <td>BV</td>
+    <td>BVT</td>
+    <td>074</td>
+    <td>BV</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South Asia</td>
+    <td>British Indian Ocean Territory</td>
+    <td></td>
+    <td>IO</td>
+    <td>IO</td>
+    <td>IOT</td>
+    <td>086</td>
+    <td>IO</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Asia</td>
+    <td>South East Asia</td>
+    <td>East Timor</td>
+    <td></td>
+    <td>--</td>
+    <td>TP</td>
+    <td>TMP</td>
+    <td>626</td>
+    <td>TP</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>Western Europe</td>
+    <td>France, Metropolitan</td>
+    <td></td>
+    <td>--</td>
+    <td>FX</td>
+    <td>FXX</td>
+    <td>249</td>
+    <td>FX</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>Indian Ocean</td>
+    <td>Southern Indian Ocean</td>
+    <td>French Southern and Antarctic Lands</td>
+    <td></td>
+    <td>FS</td>
+    <td>TF</td>
+    <td>ATF</td>
+    <td>260</td>
+    <td>--</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>Indian Ocean</td>
+    <td>Southern Indian Ocean</td>
+    <td>Heard Island and McDonald Islands</td>
+    <td></td>
+    <td>HM</td>
+    <td>HM</td>
+    <td>HMD</td>
+    <td>334</td>
+    <td>HM</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Montenegro</td>
+    <td></td>
+    <td>MW</td>
+    <td>--</td>
+    <td>--</td>
+    <td></td>
+    <td>--</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Atlantic Ocean</td>
+    <td>South Atlantic Ocean</td>
+    <td>Saint Helena</td>
+    <td></td>
+    <td>SH</td>
+    <td>SH</td>
+    <td>SHN</td>
+    <td>654</td>
+    <td>SH</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Atlantic Ocean</td>
+    <td>South Atlantic Ocean</td>
+    <td>South Georgia and the South Sandwich Islands</td>
+    <td></td>
+    <td>SX</td>
+    <td>GS</td>
+    <td>SGS</td>
+    <td>239</td>
+    <td>GS</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Oceania</td>
+    <td>North Pacific Ocean</td>
+    <td>United States Minor Outlying Islands</td>
+    <td></td>
+    <td>--</td>
+    <td>UM</td>
+    <td>UMI</td>
+    <td>581</td>
+    <td>UM</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>Europe</td>
+    <td>South East Europe</td>
+    <td>Yugoslavia*</td>
+    <td></td>
+    <td>--</td>
+    <td>YU</td>
+    <td>YUG</td>
+    <td>891</td>
+    <td>YU</td>
+    <td>5</td>
+  </tr>
+</table>
