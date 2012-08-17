@@ -21,6 +21,8 @@ var period = conf.get('worker:period');
 worker.cleaner(period);
 console.log('worker will run every ' + period + ' seconds.')
 
+console.log('Group will contains between ' + conf.get('group:min') + ' and ' + conf.get('group:max') + ' players.');
+
 // Start
 var start = function() {
 	var port = conf.get('PORT');
