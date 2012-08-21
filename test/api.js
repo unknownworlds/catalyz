@@ -74,6 +74,21 @@ describe('API v1', function() {
 						});
 				});
 		});
+
+		it('update return messages', function(done) {
+			request(app).get('/v1/register?region=Europe&steamID=12345&nickname=John&build=200&server=127.0.0.1:27015')
+				.end(function(err, response) {
+					request(app).get('/v1/register?region=Europe&steamID=98765&nickname=Jane&build=200&server=127.0.0.1:27015')
+						.end(function(err, response) {
+							request(app).get('/v1/update?steamID=12345')
+								.end(function(err, response) {
+									(response.body.messages.length >= 1).should.be.true;
+									response.body.messages[0].author.should.equal("Server");
+									done();
+								});
+						});
+				});
+		});
 	});
 
 	describe('/status', function() {

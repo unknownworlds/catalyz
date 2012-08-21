@@ -23,9 +23,6 @@ describe('Semaphore', function() {
 			foo = "Hello!";
 		});
 
-		console.log(s);
-		console.log(s.prototype);
-
 		s.set(3)
 		s.semaphore.should.equal(3);
 

@@ -55,7 +55,7 @@ PlayerSchema.methods.pushNotification = function(message, callback) {
 	});
 };
 
-PlayerSchema.methods.GetAllMessages = function(callback) {
+PlayerSchema.methods.getAllMessages = function(callback) {
 	var messages = this.messages;
 	this.messages = [];
 

@@ -3,6 +3,9 @@ var db     = require('./fixtures/database'),
 
 var conf = require('../config/config');
 
+var Semaphore = require('../lib/Semaphore'),
+	_         = require('underscore');
+
 var Group  = require('../app/models/Group'),
 	Player = require('../app/models/Player');
 
@@ -13,9 +16,7 @@ describe('Group', function() {
 	});
 
 	beforeEach(function(done) {
-		Group.remove(function() {
-			done();
-		});
+		db.drop(done);
 	});
 
 	after(function(done) {
@@ -249,5 +250,71 @@ describe('Group', function() {
 				done();
 			});
 		});
+	});
+
+	it('send message to all player', function(done) {
+		var p1 = models.createPlayer("1234", "John"),
+			p2 = models.createPlayer("2345", "Jane"),
+			p3 = models.createPlayer("3456", "Simon");
+
+		p1.save(function() {
+			p2.save(function() {
+				p3.save(function() {
+					var g = models.createGroup();
+
+					g.addPlayer(p1);
+					g.addPlayer(p2);
+					g.addPlayer(p3);
+
+					g.save(function(err) {
+						g.sendMessage("marc", "Hello", function() {
+							Player.find({}, function(err, players) {
+								_.each(players, function(p) {
+									p.messages.length.should.equal(1);
+									p.messages[0].author.should.equal("marc");
+									p.messages[0].isNotification.should.equal(false);
+									p.messages[0].message.should.equal("Hello");
+								});
+								done();
+							});
+						});
+					});
+				});
+			});
+		});
+
+	});
+
+	it('send notification to all player', function(done) {
+		var p1 = models.createPlayer("1234", "John"),
+			p2 = models.createPlayer("2345", "Jane"),
+			p3 = models.createPlayer("3456", "Simon");
+
+		p1.save(function() {
+			p2.save(function() {
+				p3.save(function() {
+					var g = models.createGroup();
+
+					g.addPlayer(p1);
+					g.addPlayer(p2);
+					g.addPlayer(p3);
+
+					g.save(function(err) {
+						g.sendNotification("Hello", function() {
+							Player.find({}, function(err, players) {
+								_.each(players, function(p) {
+									p.messages.length.should.equal(1);
+									p.messages[0].author.should.equal("Server");
+									p.messages[0].isNotification.should.equal(true);
+									p.messages[0].message.should.equal("Hello");
+								});
+								done();
+							});
+						});
+					});
+				});
+			});
+		});
+
 	});
 })

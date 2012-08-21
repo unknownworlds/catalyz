@@ -5,6 +5,9 @@ var _ = require('underscore');
 
 var conf = require('../../config/config');
 
+var Player    = require('./Player'),
+	Semaphore = require('../../lib/Semaphore');
+
 var GroupSchema = new Schema({
 	players: [],
 	playerCount: Number,
@@ -67,6 +70,36 @@ GroupSchema.methods.removePlayer = function(player) {
 	this.updateCount();
 };
 
+GroupSchema.methods.sendMessage = function(author, message, callback) {
+	var finish = new Semaphore(function() {
+		if (callback) callback();
+	});
+	finish.set(this.players.length);
+
+	_.each(this.players, function(p) {
+		Player.findOne({ steamID: p.steamID}, function(err, player) {
+			player.pushMessage(author, message, function() {
+				finish();
+			});
+		});		
+	});
+};
+
+GroupSchema.methods.sendNotification = function(message, callback) {
+	var finish = new Semaphore(function() {
+		if (callback) callback();
+	});
+	finish.set(this.players.length);
+
+	_.each(this.players, function(p) {
+		Player.findOne({ steamID: p.steamID}, function(err, player) {
+			player.pushNotification(message, function() {
+				finish();
+			});
+		});		
+	});
+};
+
 /**
  * Get the group of player using groupID.
  * If the ID is null, choose or create a group for the player
@@ -94,6 +127,7 @@ GroupSchema.statics.GetPlayerGroup = function(player, callback) {
 				player.groupID = group._id;
 				player.save(function(err) {
 					callback(group);
+					group.sendNotification("" + player.nickname + " has joined");
 				});
 			});			
 		});

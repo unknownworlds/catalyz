@@ -99,11 +99,17 @@ exports.update = function() {
 		player.save();
 
 		Group.GetPlayerGroup(player, function(group) {
-			var toSend = {
-				group: group
-			};
+			player.getAllMessages(function(messages) {
+				var toSend = {
+					group: group
+				};
 
-			common.respondJSON.call(me, toSend);
+				if (messages.length > 0) {
+					toSend.messages = messages;
+				}
+
+				common.respondJSON.call(me, toSend);
+			});			
 		});
 	})
 };

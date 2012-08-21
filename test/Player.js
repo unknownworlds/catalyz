@@ -75,7 +75,7 @@ describe('Player', function() {
 			p.pushMessage("marc", "Hello World", function() {
 				p.pushNotification("Someone joins", function() {
 					p.pushMessage("sarah", "Hello Sir", function() {
-						p.GetAllMessages(function(m) {
+						p.getAllMessages(function(m) {
 							m.length.should.equal(3);
 							for (var i = 0; i < m.length; i++) {
 								m[i].should.have.property("author");
