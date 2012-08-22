@@ -100,21 +100,29 @@ exports.update = function() {
 		player.save();
 
 		Group.GetPlayerGroup(player, function(group) {
+			var next = function(player) {
+				player.getAllMessages(function(messages) {
+					var toSend = {
+						group: group
+					};
+
+					if (messages.length > 0) {
+						toSend.messages = messages;
+					}
+
+					common.respondJSON.call(me, toSend);
+				});			
+			};
+
 			if (message) {
-				group.sendMessage(player.nickname, message);
-			}
-
-			player.getAllMessages(function(messages) {
-				var toSend = {
-					group: group
-				};
-
-				if (messages.length > 0) {
-					toSend.messages = messages;
-				}
-
-				common.respondJSON.call(me, toSend);
-			});			
+				group.sendMessage(player.nickname, message, function() {
+					Player.findOne({ steamID: steamID}, function(err, player) {
+						next(player);
+					});
+				});
+			} else {
+				next(player);
+			}			
 		});
 	})
 };

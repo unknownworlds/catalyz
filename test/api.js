@@ -84,7 +84,11 @@ describe('API v1', function() {
 								.end(function(err, response) {
 									(response.body.messages.length >= 1).should.be.true;
 									response.body.messages[0].author.should.equal("Server");
-									done();
+									request(app).get('/v1/update?steamID=12345&message=Hello')
+										.end(function(err, response) {
+											response.body.messages[0].message.should.equal("Hello");
+											done();
+										});
 								});
 						});
 				});
