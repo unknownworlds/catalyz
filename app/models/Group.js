@@ -67,6 +67,7 @@ GroupSchema.methods.removePlayer = function(player) {
 	this.players = _.filter(this.players, function(item) {
 		return item.steamID != player.steamID;
 	});
+	this.sendNotification("" + player.nickname + " has left");
 	this.updateCount();
 };
 
@@ -93,6 +94,9 @@ GroupSchema.methods.sendNotification = function(message, callback) {
 
 	_.each(this.players, function(p) {
 		Player.findOne({ steamID: p.steamID}, function(err, player) {
+			if (!player) {
+				return;
+			}
 			player.pushNotification(message, function() {
 				finish();
 			});
