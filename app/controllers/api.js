@@ -87,7 +87,8 @@ exports.update = function() {
 		me       = this;
 
 	var query   = url.parse(request.url, true).query,
-		steamID = query.steamID;
+		steamID = query.steamID,
+		message = query.message;
 
 	if(!common.checkParameter.call(this, [steamID])) return;
 
@@ -99,6 +100,10 @@ exports.update = function() {
 		player.save();
 
 		Group.GetPlayerGroup(player, function(group) {
+			if (message) {
+				group.sendMessage(player.nickname, message);
+			}
+
 			player.getAllMessages(function(messages) {
 				var toSend = {
 					group: group
