@@ -1,6 +1,10 @@
 var Group  = require('../models/Group'),
 	Player = require('../models/Player');
 
+var Semaphore = require('../../lib/Semaphore');
+
+var _ = require('underscore');
+
 var cleanPlayer = function(idle, callback) {
 	var now = new Date(),
 		limitDate = now.setSeconds(now.getSeconds() - idle);
@@ -48,18 +52,26 @@ var removePlayer = function(player, callback) {
 		});
 	};
 
-	Group.findById(player.groupID, function(err, group) {
-		if (group == null) {
+	Group.find({"players.steamID": player.steamID}, function(err, groups) {
+		if (groups.length == 0) {
 			groupCallback();
 			return;
 		}
 
-		group.removePlayer(player);
-		if (group.players.length == 0) {
-			group.remove(groupCallback);
-		} else {
-			group.save(groupCallback);
-		}
+		var semaphore = new Semaphore(function() {
+			groupCallback();
+		});
+		semaphore.set(groups.length);
+
+		_.each(groups, function(group) {
+			group.removePlayer(player);
+
+			if (group.players.length == 0) {
+				group.remove(semaphore);
+			} else {
+				group.save(semaphore);
+			}
+		});		
 	});
 }
 exports.removePlayer = removePlayer;
