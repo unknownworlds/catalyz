@@ -1,4 +1,5 @@
-var url = require('url');
+var url     = require('url'),
+	winston = require('winston');
 
 var Continents = require('../../lib/geodata/Continents');
 
@@ -40,6 +41,14 @@ exports.register = function() {
 					player: player,
 					group: group
 				};
+
+				winston.info("register", {
+					steamID: steamID,
+					nickname: nickname,
+					server: server,
+					build: build,
+					region: region
+				});
 				common.respondJSON.call(me, toSend);
 			});
 		};
@@ -50,7 +59,7 @@ exports.register = function() {
 				nickname: nickname,
 				server: server,
 				build: build,
-				region: region,
+				region: region
 			});
 			player.save(callback);
 		} else {
@@ -73,6 +82,13 @@ exports.deregister = function() {
 	Player.findOne({'steamID' : steamID}, function(err, player) {
 		if (player != null) {
 			clean.removePlayer(player, function() {
+				var dataLog = {
+					steamID: steamID
+				};
+				if (reason) dataLog.reason = reason;
+
+				winston.info("deregister", dataLog);
+
 				common.respondJSON.call(me, {status: 'OK', description: steamID + ' has been deregistered.'});
 			});
 		} else {

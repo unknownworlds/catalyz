@@ -7,7 +7,14 @@ var app        = require('./app/server'),
 	Continents = require('./lib/geodata/Continents'),
 	conf       = require('./config/config');
 
-// Init
+var winston          = require('winston'),
+	transportMongoDB = require('winston-mongodb').MongoDB
+	url			     = require('url');
+
+//////////
+// Init //
+//////////
+
 var uri = conf.get('database:uri');
 mongoose.connect(uri);
 console.log('database connection to ' + uri + '.');
@@ -16,14 +23,30 @@ Continents.init(function() {
 	start();
 });
 
-// Start daemon
+// Logger
+
+var dbInfo = url.parse(uri);
+
+winston.add(transportMongoDB, {
+	db: dbInfo.pathname.replace(/^\//, ''), // remove "/"
+	host: dbInfo.hostname,
+	port: dbInfo.port
+});
+
+////////////
+// Daemon //
+////////////
+
 var period = conf.get('worker:period');
 worker.cleaner(period);
 console.log('worker will run every ' + period + ' seconds.')
 
 console.log('Group will contains between ' + conf.get('group:min') + ' and ' + conf.get('group:max') + ' players.');
 
-// Start
+///////////
+// Start //
+///////////
+
 var start = function() {
 	var port = conf.get('PORT');
 	app.listen(conf.get('PORT'));
