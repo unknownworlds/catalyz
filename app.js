@@ -30,7 +30,7 @@ var dbInfo = url.parse(uri);
 winston.add(transportMongoDB, {
 	db: dbInfo.pathname.replace(/^\//, ''), // remove "/"
 	host: dbInfo.hostname,
-	port: dbInfo.port
+	port: parseInt(dbInfo.port)
 });
 
 ////////////
