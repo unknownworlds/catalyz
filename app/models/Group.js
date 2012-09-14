@@ -1,7 +1,8 @@
 var mongoose = require('mongoose'),
 	Schema   = mongoose.Schema;
 
-var _ = require('underscore');
+var _       = require('underscore'),
+	winston = require('winston');
 
 var conf = require('../../config/config');
 
@@ -57,6 +58,7 @@ GroupSchema.methods.addPlayer = function(player) {
 
 		if (this.players.length >= conf.get('group:min')) {
 			this.hasStarted = true;
+			winston.info('group start');
 		}
 
 		this.updateCount();
