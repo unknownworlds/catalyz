@@ -4,7 +4,7 @@
     "description": "Make people play to Natural Selection 2 together",
     "dependencies": {
         "director": "1.x.x",
-        "mongoose": "3.0.x",
+        "mongoose": "5.7.x",
         "underscore": "1.x.x",
         "supertest": "0.1.x",
         "nconf":  "0.6.x",
